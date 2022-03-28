@@ -75,7 +75,7 @@ Para ejecutar el cuaderno jupyter, se utiliza el servicio **Amazon SageMaker Not
 
 - Durante la generación del Dataset no es necesario utilizar instancias de cómputo con altas prestaciones. Por tanto, se busca el tipo de instancia más económico (o que entra en free tier). Se escoge instancia Micro de tipo T3.
 
-- Pero durante el entrenamiento del Modelo sí es necesario utilizar una instancia EC2 con GPU y capaz de trabajar con GBs de información, como las instancias Intel que utilizaremos. Concretamente, se busca la mejroa relación prestaciones/precio y se escoge la instancia **p3.2xlarge** que tiene una GPU con 8GB, 61GB de RAM y tecnología Intel (Intel AVX, Intel AVX2, Intel Turbo).
+- Pero durante el entrenamiento del Modelo sí es necesario utilizar una instancia EC2 con GPU y capaz de trabajar con GBs de información, como las instancias Intel que utilizaremos. Concretamente, se busca la mejor relación prestaciones/precio y se escoge la instancia **p3.2xlarge** que tiene una GPU con 16GB, 61GB de RAM y tecnología Intel (Intel AVX, Intel AVX2, Intel Turbo).
 
 Una vez generado el Dataset, éste se copia desde el notebook en **Amazon S3**, para conservarlo aún después de finalizar la instancia EC2 de SageMaker.
 
